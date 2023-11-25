@@ -8,7 +8,6 @@ def is_valid(url):
         return False
 
 url = input("Input URL: ")
-#print(is_valid(url))
 if not is_valid(url):
     print("Incorrect URL")
 else:
