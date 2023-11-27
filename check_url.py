@@ -17,6 +17,6 @@ else:
         if '200' in str(response):
             print(f'success: {response.status_code}')
         else:
-            print(f'failure: {response.status_code}')
+            print(f'failure: {response.status_code}' )
     except requests.RequestException as err:
-        print(f'failure: {err}')
+        print(f'failure: {response.status_code}')
