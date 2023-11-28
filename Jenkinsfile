@@ -6,12 +6,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        sh 'python3 --version'
+        sh 'python --version'
       }
     }
     stage('check_url') {
       steps {
-        sh 'python3 check_url.py ${url}'
+        sh 'python check_url.py ${url}'
       }
     }
   }
