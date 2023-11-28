@@ -1,5 +1,6 @@
 import requests
 import validators
+from sys import argv
 
 def is_valid(url):
     if validators.url(url):
@@ -7,7 +8,8 @@ def is_valid(url):
     else:
         return False
 
-url = input("Input URL: ")
+#url = input("Input URL: ")
+url = argv
 if not is_valid(url):
     print("Incorrect URL")
 else:
