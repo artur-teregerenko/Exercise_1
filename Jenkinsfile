@@ -10,4 +10,11 @@ pipeline {
       }
     }
   }
+  stage('send result') {
+	    steps{
+	      emailext body: '',
+          subject: 'Result',
+          to: 'teregerenko_a@mail.ru'
+	    }
+	  }
 }
