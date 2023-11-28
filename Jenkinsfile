@@ -9,12 +9,12 @@ pipeline {
         sh 'bash check_url.sh ${url}'
       }
     }
+    stage('send result') {
+      steps{
+        emailext body: '',
+        subject: 'Result',
+        to: 'teregerenko_a@mail.ru'
+      }
+    }
   }
-  stage('send result') {
-	    steps{
-	      emailext body: '',
-          subject: 'Result',
-          to: 'teregerenko_a@mail.ru'
-	    }
-	  }
 }
