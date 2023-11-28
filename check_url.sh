@@ -2,7 +2,7 @@
 
 status=`curl -s -o /dev/null -w "%{http_code}" $1`
 if [[ "$status" == "200" ]]; then
-  echo "Success"
+  echo "success"
 else
-  echo "Failed"
+  echo "failure"
 fi
